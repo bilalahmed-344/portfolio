@@ -25,7 +25,7 @@ const PortfolioCard: React.FC<PortfolioCardProp> = ({
       className={`relative flex flex-col justify-center border-none h-[185px] sm:h-[330px]  w-[30%] overflow-hidden transition-all duration-300 group rounded-[20px] mb-4`}
     >
       <Link href={`/portfolio/${id}`} className="w-full h-full">
-        <div
+        <span
           className="h-full w-full flex justify-center items-center "
           style={{ backgroundColor: bgColor }}
         >
@@ -34,7 +34,7 @@ const PortfolioCard: React.FC<PortfolioCardProp> = ({
             className="object-cover "
             alt={title || "Portfolio Image"}
           />
-        </div>
+        </span>
 
         <div className="bg-white absolute bottom-0 left-0 right-0 p-3 text-white transform translate-y-full transition-transform duration-500 ease-in-out group-hover:-translate-y-4 z-10 w-[93%] mx-auto bg-opacity-15 flex justify-between">
           <div>
